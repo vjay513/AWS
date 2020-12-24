@@ -2,7 +2,7 @@
 EC2 User data: install Apache web server for Amazon Linux 2 Image
 
 #!/bin/bash
-
+```
 ########################################
 ##### USE THIS WITH AMAZON LINUX 2 #####
 ########################################
@@ -16,3 +16,5 @@ yum install -y httpd.x86_64
 systemctl start httpd.service
 systemctl enable httpd.service
 echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+
+```
